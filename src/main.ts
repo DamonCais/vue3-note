@@ -1,0 +1,12 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import { setupStore } from '@/store';
+import router from '@/router/index';
+import 'element-plus/theme-chalk/index.css';
+import 'uno.css';
+import i18n from './locale';
+const app = createApp(App);
+setupStore(app);
+app.use(router);
+app.use(i18n);
+app.mount('#app');

@@ -1,0 +1,5 @@
+.nc-button{
+    --nc-button-primary-bg-color:blue;
+    --nc-button-bg-color:var(--nc-button-primary-bg-color);
+    background-color: var(--nc-button-bg-color);
+}
